@@ -12,7 +12,7 @@
 
 buildPythonPackage rec {
   pname = "testfixtures";
-  version = "6.18.3";
+  version = "6.18.5";
   format = "setuptools";
   # DO NOT CONTACT upstream.
   # https://github.com/simplistix/ is only concerned with internal CI process.
@@ -25,7 +25,7 @@ buildPythonPackage rec {
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "sha256-JgAQCulv/QgjNLN441VVD++LSlKab6TDT0cTCQXHQm0=";
+    sha256 = "sha256-Atrog/Vn9bcP0608nu+5WRLniskL5sdES14vRr9XLIQ=";
   };
 
   # no longer compatible with sybil
