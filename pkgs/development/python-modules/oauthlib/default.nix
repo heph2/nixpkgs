@@ -14,7 +14,7 @@
 
 buildPythonPackage rec {
   pname = "oauthlib";
-  version = "3.1.1";
+  version = "3.2.0";
   format = "setuptools";
 
   # master supports pyjwt==1.7.1
@@ -22,7 +22,7 @@ buildPythonPackage rec {
     owner = pname;
     repo = pname;
     rev = "v${version}";
-    hash = "sha256:1bgxpzh11i0x7h9py3a29cz5z714b3p498b62znnn5ciy0cr80sv";
+    hash = "sha256-41JFURG8G8BjlAlNu2+lbj84XR/trAk1U5OPYxPq+5M=";
   };
 
   propagatedBuildInputs = [
