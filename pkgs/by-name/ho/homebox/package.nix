@@ -24,7 +24,7 @@ in
 buildGoModule {
   inherit pname version src;
 
-  vendorHash = lib.fakeHash;
+  vendorHash = "sha256-fklNsQEqAjbiaAwTAh5H3eeANkNRDVRuJZ8ithJsfZs=";
   modRoot = "backend";
   # the goModules derivation inherits our buildInputs and buildPhases
   # Since we do pnpm thing in those it fails if we don't explicitly remove them
@@ -37,7 +37,7 @@ buildGoModule {
     preBuild = "";
   };
 
-  pnpmDeps = fetchNpmDeps {
+  pnpmDeps = fetchPnpmDeps {
     inherit pname version;
     src = "${src}/frontend";
     pnpm = pnpm_9;
