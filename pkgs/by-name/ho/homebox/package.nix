@@ -13,12 +13,12 @@
 }:
 let
   pname = "homebox";
-  version = "0.21.0";
+  version = "0.22.3";
   src = fetchFromGitHub {
     owner = "sysadminsmedia";
     repo = "homebox";
     tag = "v${version}";
-    hash = "sha256-JA0LawQHWLCJQno1GsajVSsLG3GGgDp2ttIa2xELX48=";
+    hash = "1iazzrnj1r7nwjgnh5r4xgyzl48rb3p18qgc7lpxwn6sgqwy4b9g";
   };
 in
 buildGoModule {
